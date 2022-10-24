@@ -35,12 +35,13 @@ programa
 		
 
 		escreva("Digite o código do produto:\n\n ")
-		escreva ("1-> Cachorro-quente\n ")
-		escreva ("2-> X-Salada\n ")
-		escreva ("3-> X-Banco\n ")
-		escreva ("4-> Bauru\n")
-		escreva (" 5-> Refrigerante\n ")
-		escreva ("6-> Suco de laranja\n ")
+		escreva ("    Produtos:           |   Valor unitário:  \n\n ")
+		escreva ("1-> Cachorro-quente        R$ 10.00\n ")
+		escreva ("2-> X-Salada               R$ 15.00\n ")
+		escreva ("3-> X-Banco                R$ 18.00\n ")
+		escreva ("4-> Bauru                  R$ 12.00\n")
+		escreva (" 5-> Refrigerante           R$ 8.00 \n ")
+		escreva ("6-> Suco de laranja        R$ 13.00\n ")
 		
 		leia(numero)
 		escreva("Digite a qutantidade:\n ")
@@ -105,7 +106,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1979; 
+ * @POSICAO-CURSOR = 1357; 
  * @DOBRAMENTO-CODIGO = [1];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
