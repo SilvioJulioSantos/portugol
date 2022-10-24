@@ -40,12 +40,16 @@ programa
 		escreva("Digite o primeiro número: ")
 		leia(numero)
 
-		se(numero%2==0)
-		escreva(numero," = É número par ")
+		se(numero%2==0 e numero<0)
+		escreva(numero," = É número par e negativo")
 		
-	     senao
-          escreva(numero," = É número ímpar ")
+		senao se (numero%2==0 e numero > 0)
+		escreva(numero," = É número par  e positivo")
 		
+	     senao se ( numero < 0)
+          escreva(numero," = É número ímpar e negativo ")
+		senao
+		escreva(numero," = É número ímpar e positivo ")
 	}
 }
 
@@ -54,7 +58,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1128; 
+ * @POSICAO-CURSOR = 1258; 
  * @DOBRAMENTO-CODIGO = [1];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
