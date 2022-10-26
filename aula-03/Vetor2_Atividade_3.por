@@ -34,36 +34,54 @@ programa
 	
 	funcao inicio() 
 	{
-		
-			inteiro matrizInteiros[10][10], tamanhoLinha, tamanhoColuna
-		
-		tamanhoLinha = 1
-		tamanhoColuna = 6
-		
-		
-		para(inteiro indiceLinha=0; indiceLinha < tamanhoLinha; indiceLinha++){
-
-			para(inteiro indiceColuna=0; indiceColuna < tamanhoColuna; indiceColuna++){
-			
-				escreva("Digite um valor para a posição [", indiceLinha, "][", indiceColuna, "]: ")
-				leia(matrizInteiros[indiceLinha][indiceColuna])
-                   
-			}
-				
-			
+		inteiro vetor[10], contador, numero, soma = 0
+		contador = 0
+		enquanto(contador < 10){
+		    escreva("Por favor informe o ",contador + 1,"º número inteiro: ")
+		    leia(vetor[contador])
+		    contador++
+		   
+		   limpa()
 		}
-          
-		
-		para(inteiro indiceColuna=1; indiceColuna < tamanhoColuna; indiceColuna++){
-              
-              se(indiceColuna%2==1){
-			escreva(indiceColuna ," ")
-		
+		 
+		 escreva("\nNumeros que forma digitados: ")
+		 para(contador = 0; contador<10;  contador++){	
 			
-              }
+			 escreva(vetor[contador]," " )
+	
+		
+		    }
+		
+		contador = 0
+		escreva("Elementos nos índices ímpares: ")
+		enquanto(contador < 10){
+		    se(contador%2 == 1){
+		        escreva(vetor[contador], " ")
+		    }
+		   contador++
 		}
 		
+		escreva("\nElementos nos índices pares: ")
+		contador = 0
+		enquanto(contador < 10){
+		    se(vetor[contador]%2 == 0){
+		        escreva(vetor[contador], " ")
+		    }
+		    contador++
+		}
+		
+		contador = 0
+		enquanto(contador < 10){
+		    soma = soma + vetor[contador]
+		    contador++
+		}
+		escreva("\n\nResultado do cálculo:")
+		escreva("\nA soma é: ", soma)
+		escreva("\nA média é: ", (soma/10))
+	
 	}
+      
+
 }
 
 /* $$$ Portugol Studio $$$ 
@@ -71,7 +89,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1425; 
+ * @POSICAO-CURSOR = 1088; 
  * @DOBRAMENTO-CODIGO = [1];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
